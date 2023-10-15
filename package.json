@@ -1,6 +1,6 @@
 {
   "name": "chatnio",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "The official Node.js / Typescript library for the Chat Nio API ",
   "main": "dist/index.js",
   "scripts": {
