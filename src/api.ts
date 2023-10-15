@@ -78,7 +78,7 @@ export async function getSubscription(): Promise<Subscription> {
   return resp.data.data as Subscription;
 }
 
-export async function subscribe(month: number): Promise<boolean> {
+export async function buySubscription(month: number): Promise<boolean> {
   // month must be integer between 1 and 999
   if (month <= 0 || month > 999) {
     throw new Error('Invalid month');

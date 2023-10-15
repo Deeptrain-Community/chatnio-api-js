@@ -2,7 +2,7 @@ import {client} from "./index";
 
 export type ChatProps = {
   message: string;
-  model: string;
+  model?: string;
   web?: boolean;
 }
 
@@ -32,7 +32,7 @@ function getToken(): string {
     return 'anonymous';
 }
 
-export class Connection {
+export class Chat {
   protected connection?: WebSocket;
   public id: number;
   public state: boolean;

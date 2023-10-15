@@ -15,3 +15,23 @@ export function setKey(key: string) {
 export function setEndpoint(url: string) {
   client.defaults.baseURL = url;
 }
+
+export {
+  Message,
+  Conversation,
+  Package,
+  Subscription,
+} from './types';
+
+export { Chat } from './chat';
+
+export {
+  getConversations,
+  getConversation,
+  deleteConversation,
+  getQuota,
+  buyQuota,
+  getSubscription,
+  buySubscription,
+  getPackage
+} from './api';

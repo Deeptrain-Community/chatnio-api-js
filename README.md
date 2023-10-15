@@ -13,6 +13,10 @@ The official Node.js / Typescript library for the Chat Nio API
 - Quota
 - Subscription and Package
 
+## Bundle Size
+- 70 KiB (minified)
+- 24 KiB (gzip)
+
 ## Browser Compatibility
 - [axios](https://github.com/axios/axios#browser-support) (for http request)
 - [websocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#browser_compatibility) (for chat stream)
