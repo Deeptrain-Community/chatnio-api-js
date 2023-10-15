@@ -1,0 +1,31 @@
+{
+  "name": "chatnio",
+  "version": "1.0.0",
+  "description": "The official Node.js / Typescript library for the Chat Nio API ",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deeptrain-Community/chatnio-api-node.git"
+  },
+  "keywords": [
+    "chatnio",
+    "api"
+  ],
+  "author": "Deeptrain Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Deeptrain-Community/chatnio-api-node/issues"
+  },
+  "homepage": "https://github.com/Deeptrain-Community/chatnio-api-node#readme",
+  "devDependencies": {
+    "ts-loader": "^9.5.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.5.1"
+  }
+}
