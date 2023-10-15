@@ -61,7 +61,8 @@ export class Chat {
       }, 3000);
     };
     this.connection.onmessage = (event: MessageEvent<any>) => {
-      const message = JSON.parse(event.data);
+      const message = JSON.parse(event.data) as MessageSegment;
+      this.callback && this.callback(message);
     };
   }
 
