@@ -46,6 +46,7 @@ class Chat {
         };
         this.connection.onmessage = (event) => {
             const message = JSON.parse(event.data);
+            this.callback && this.callback(message);
         };
     }
     send(data) {

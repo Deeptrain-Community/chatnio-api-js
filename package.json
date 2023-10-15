@@ -1,11 +1,11 @@
 {
   "name": "chatnio",
-  "version": "1.1.4",
-  "description": "The official Node.js / Typescript library for the Chat Nio API ",
+  "version": "1.1.5",
+  "description": "The official Node.js / Typescript library for the Chat Nio API",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc && copy src\\index.d.ts dist",
-	"publish": "tsc && copy src\\index.d.ts dist && npm publish"
+	"release": "tsc && copy src\\index.d.ts dist && npm publish"
   },
   "repository": {
     "type": "git",
