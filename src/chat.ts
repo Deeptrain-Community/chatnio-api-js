@@ -38,7 +38,7 @@ export class Chat {
   public state: boolean;
   protected callback?: (data: any) => void;
 
-  public constructor(id: number) {
+  public constructor(id: number = -1) {
     this.state = false;
     this.id = id;
     this.init();
