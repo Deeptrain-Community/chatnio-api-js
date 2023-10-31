@@ -87,6 +87,7 @@ export class Chat {
       message: data.message,
       model: data.model || 'gpt-3.5-turbo',
       web: data.web || false,
+      type: 'chat',
     });
   }
 

@@ -1,11 +1,11 @@
 {
   "name": "chatnio",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "The official Node.js / Typescript library for the Chat Nio API",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc && copy src\\index.d.ts dist",
-	"release": "tsc && copy src\\index.d.ts dist && npm publish"
+    "release": "tsc && copy src\\index.d.ts dist && npm publish"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "homepage": "https://github.com/Deeptrain-Community/chatnio-api-node#readme",
   "dependencies": {
     "axios": "^1.5.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
   }
 }
