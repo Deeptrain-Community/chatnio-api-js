@@ -78,7 +78,7 @@ export async function getSubscription(): Promise<Subscription> {
   return resp.data.data as Subscription;
 }
 
-export async function buySubscription(month: number): Promise<boolean> {
+export async function buySubscription(level: number, month: number): Promise<boolean> {
   // month must be integer between 1 and 999
   if (month <= 0 || month > 999) {
     throw new Error('Invalid month');
@@ -86,7 +86,7 @@ export async function buySubscription(month: number): Promise<boolean> {
     throw new Error('Month must be an integer');
   }
 
-  const resp = await client.post('/subscribe', { month });
+  const resp = await client.post('/subscribe', { month, level });
 
   if (resp.status !== 200) {
     throw new Error('Failed to subscribe');

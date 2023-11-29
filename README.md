@@ -95,5 +95,5 @@ const pkg = await getPackage();
 const subscription = await getSubscription();
 
 // buy subscription
-const state = await buySubscription(1);
+const state = await buySubscription(1, 1);
 ```

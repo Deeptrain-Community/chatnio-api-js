@@ -87,7 +87,7 @@ function getSubscription() {
     });
 }
 exports.getSubscription = getSubscription;
-function buySubscription(month) {
+function buySubscription(level, month) {
     return __awaiter(this, void 0, void 0, function* () {
         if (month <= 0 || month > 999) {
             throw new Error('Invalid month');
@@ -95,7 +95,7 @@ function buySubscription(month) {
         else if (month % 1 !== 0) {
             throw new Error('Month must be an integer');
         }
-        const resp = yield index_1.client.post('/subscribe', { month });
+        const resp = yield index_1.client.post('/subscribe', { month, level });
         if (resp.status !== 200) {
             throw new Error('Failed to subscribe');
         }
