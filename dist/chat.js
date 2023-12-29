@@ -13,7 +13,10 @@ exports.Chat = void 0;
 const index_1 = require("./index");
 function getPath() {
     const endpoint = index_1.client.defaults.baseURL || '';
-    return endpoint.replace(/^https?/, 'wss') + '/chat';
+    return endpoint
+        .replace(/^http/, 'ws')
+        .replace(/^https/, 'wss')
+        + '/chat';
 }
 function getToken() {
     const token = index_1.client.defaults.headers['Authorization'] || '';

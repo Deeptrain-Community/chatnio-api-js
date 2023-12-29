@@ -1,6 +1,6 @@
-# ChatNio Javascript Library
+# Chat Nio Javascript Library
 
-The official Node.js / Typescript library for the Chat Nio API
+The official Typescript library for the Chat Nio API
 
 - Authors: Deeptrain Team
 - Free software: MIT license
@@ -30,16 +30,18 @@ npm install chatnio
 
 - Authentication
 ```javascript
-import { setKey } from 'chatnio';
+import { setKey, setEndpoint } from 'chatnio';
 
 setKey("sk-...");
+
+// set custom api endpoint (default: https://api.chatnio.net)
+// setEndpoint("https://example.com/api");
 ```
 
 - Chat
 ```javascript
 import { Chat } from 'chatnio';
 
-// tip: nodejs currently does not support websocket in server side
 const chat = new Chat(-1); // id -1 (default): create new conversation
 
 // using stream

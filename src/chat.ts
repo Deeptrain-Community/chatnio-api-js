@@ -21,7 +21,11 @@ export type MessageResponse = {
 
 function getPath(): string {
     const endpoint = client.defaults.baseURL || '';
-    return endpoint.replace(/^https?/, 'wss') + '/chat';
+
+    return endpoint
+      .replace(/^http/, 'ws')
+      .replace(/^https/, 'wss')
+      + '/chat';
 }
 
 function getToken(): string {
