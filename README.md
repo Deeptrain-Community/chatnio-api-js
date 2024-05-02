@@ -38,7 +38,7 @@ setKey("sk-...");
 // setEndpoint("https://example.com/api");
 ```
 
-- Chat
+- Chat (Currently Browser Only)
 ```javascript
 import { Chat } from 'chatnio';
 
